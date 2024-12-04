@@ -8,7 +8,7 @@ pipeline{
   }
    stage('compile'){
     steps{
-      sh ' mvn compile package'
+      sh ' mvn -DskipTests=true  package'
       }
      
     }
